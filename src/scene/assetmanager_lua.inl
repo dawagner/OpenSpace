@@ -42,6 +42,15 @@ namespace {
 }
 
 /**
+ * Reloads (remove+add) the asset with the specfied name. This is identical to calling
+ * remove(assetName) and then add(assetName).
+ */
+[[codegen::luawrap]] void reload(std::string assetName) {
+    remove(assetName);
+    add(assetName);
+}
+
+/**
  * Removes all assets that are currently loaded
  */
 [[codegen::luawrap]] void removeAll() {

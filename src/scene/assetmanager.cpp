@@ -1042,6 +1042,7 @@ scripting::LuaLibrary AssetManager::luaLibrary() {
         {
             codegen::lua::Add,
             codegen::lua::Remove,
+            codegen::lua::Reload,
             codegen::lua::RemoveAll,
             codegen::lua::IsLoaded,
             codegen::lua::AllAssets,
